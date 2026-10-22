@@ -4,6 +4,12 @@ A small Render edition with shared English and Arabic news broadcasts and an
 interactive OANDA/TradingView gold chart. The complete account and forecasting
 workspace remains at https://g.au7.workers.dev/app.
 
+Original instrumental music plays between fresh bulletins. Join live starts
+audio immediately; language channels share the station clock. Ten fixed public
+publisher feeds are collected. Short news clips have six seconds of preload
+time, and recent clip metadata remains available for two minutes for verification.
+Music is composed from source at build time, with no sampled songs or GPU.
+
 Arabic2 uses Nabra FP32 and offline vowel restoration on the server CPU.
 English speech is requested by the server from Microsoft's online voices.
 This edition has no connection to a personal computer, private model API,
