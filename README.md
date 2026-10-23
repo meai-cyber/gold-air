@@ -14,6 +14,8 @@ labelled unverified; source-reported author times stay separate from collection
 times. Static public pages and documented APIs are parsed without a login,
 browser engine, private content, arbitrary URL or owner-PC dependency. Denied
 public searches are not used or bypassed.
+Two due social sources are admitted per polling batch, oldest due first, so
+the limited free CPU cannot starve later sources behind an oversized batch.
 
 Five Arabic channels cover Al Arabiya, Al Hadath, Al Jazeera, Al Jazeera Mubasher
 and Asharq; four pinned English publishers cover Reuters, Bloomberg, CNBC and
