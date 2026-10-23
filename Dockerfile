@@ -4,13 +4,13 @@ ENV PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1 PYTHONUTF8=1 \
     CUDA_VISIBLE_DEVICES=-1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 \
     OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 HF_HUB_OFFLINE=1 \
     TRANSFORMERS_OFFLINE=1 RADIO_MODEL_DIR=/opt/gold-radio-assets \
-    RADIO_DATA_DIR=/tmp/gold-radio-data PORT=10000 RADIO_STARTUP_SPEECH_CHECK=1
+    RADIO_DATA_DIR=/tmp/gold-radio-data PORT=10000 RADIO_STARTUP_SPEECH_CHECK=1 RADIO_PUBLIC_DISCUSSIONS=1
 COPY --from=node /usr/local/bin/node /usr/local/bin/node
 RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 COPY gold-radio-render-source.zip /tmp/gold-radio-source.zip
-RUN python -c "import hashlib,pathlib,zipfile; p=pathlib.Path('/tmp/gold-radio-source.zip'); assert hashlib.sha256(p.read_bytes()).hexdigest()=='cba196fb23a29ae76cec8304f2aa918ea5f261ed312ddb7806bb9e5b07497b79'; zipfile.ZipFile(p).extractall('/app'); p.unlink()"
+RUN python -c "import hashlib,pathlib,zipfile; p=pathlib.Path('/tmp/gold-radio-source.zip'); assert hashlib.sha256(p.read_bytes()).hexdigest()=='8e60eb3faa3c1e9e4e484d3eaf2c07f719a395965cea456af226d5ae77902ad9'; zipfile.ZipFile(p).extractall('/app'); p.unlink()"
 RUN pip install --no-cache-dir -r /app/requirements.txt
 RUN python bootstrap.py && useradd --uid 10001 --create-home radio \
     && mkdir -p /tmp/gold-radio-data && chown radio:radio /tmp/gold-radio-data \
