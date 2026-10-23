@@ -8,6 +8,19 @@ without a home PC, local inference server, private history or account database.
 Al Jazeera liveblog updates alongside BBC, CNBC, Guardian, CNN Business Arabic,
 France 24, DW, Sky News Arabic and Federal Reserve releases/speeches.
 
+Additional fixed public publisher accounts on Telegram (Arabic) and Bluesky
+(English) feed the same ranked speech queue. Public posts are attributed and
+labelled unverified; source-reported author times stay separate from collection
+times. Static public pages and documented APIs are parsed without a login,
+browser engine, private content, arbitrary URL or owner-PC dependency. Denied
+public searches are not used or bypassed.
+
+Five Arabic channels cover Al Arabiya, Al Hadath, Al Jazeera, Al Jazeera Mubasher
+and Asharq; four pinned English publishers cover Reuters, Bloomberg, CNBC and
+Al Jazeera. Gold/economic reports rank first, with important world security,
+diplomacy, policy and market context following at lower priority. No causal
+effect on gold or factual verification is inferred from a relevance score.
+
 Latest-ten-minute reports have priority. When none is waiting, relevant unplayed
 reports from ages 601-3600 seconds are announced with their original publication
 time and clearly labelled EARLIER REPORT. Both cohorts use rounded top-70%
