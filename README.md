@@ -39,3 +39,8 @@ Deploy the root Dockerfile to Render's Free Web Service with /health. Free
 instances can sleep and have ephemeral storage. Their capacity cannot host
 the full language-model and forecasting stack. Verify manifests and actual
 new speech WAVs after deployment; HTTP health alone does not prove playback.
+
+Playback recovery isolates language changes and old media events, retries stalled
+clips and refuses stale/cached station clocks. Programme turns and chapters stay
+ordered under queue pressure. Busy news leaves slots for market/discussion
+updates. Public source timestamps and eight-second music gaps remain enforced.
