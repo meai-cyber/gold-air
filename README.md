@@ -25,10 +25,16 @@ effect on gold or factual verification is inferred from a relevance score.
 
 Latest-ten-minute reports have priority. When none is waiting, relevant unplayed
 reports from ages 601-3600 seconds are announced with their original publication
-time and clearly labelled EARLIER REPORT. Both cohorts use rounded top-70%
+time and clearly labelled EARLIER REPORT. Both cohorts use rounded top-40%
 selection before playback receipts. Already-spoken reports are not recycled to
-fill airtime. Original source clocks are retained. Short source teasers can
-supplement short titles within a combined 24-word excerpt budget.
+fill airtime. Original source clocks are retained. Full collected titles and
+whole retrieved teaser sentences are spoken, without the old 24-word cutoff.
+Source bodies remain bounded at 800 characters and audio slots at 90 seconds.
+
+Factual gold briefings approximately every three minutes describe observed
+minute-level moves, sampled ranges and actual publisher topics. These are
+observational briefings rather than LLM-generated podcasts. Twelve-second music
+breaks follow complete news bursts or briefings, with more music in empty gaps.
 
 Speech is prepared ahead in bounded queues. Original 120-second relaxing
 instrumental music loops throughout waiting, download and retry gaps; ready
