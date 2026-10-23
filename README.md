@@ -36,6 +36,15 @@ minute-level moves, sampled ranges and actual publisher topics. These are
 observational briefings rather than LLM-generated podcasts. Twelve-second music
 breaks follow complete news bursts or briefings, with more music in empty gaps.
 
+Three factual briefing formats rotate between observed movement, sampled range
+and curve reading. Compact price bulletins retain all available 1/5/10-minute
+changes, with provider-minute wording variants. Same-priority selected reports
+rotate topics and sources without changing the news quota or gold priority.
+Speech preparation estimates its likely air time and defers quotes that would
+already be stale, while the original final freshness check remains enforced.
+The player shows a separately clocked Gold API reference strip, clears stale
+numbers and keeps full spoken text in an expandable panel below audio controls.
+
 Speech is prepared ahead in bounded queues. Original 120-second relaxing
 instrumental music loops throughout waiting, download and retry gaps; ready
 speech replaces it on the same element. Pause stops both. The old eight-second
