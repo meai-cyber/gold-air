@@ -2,37 +2,36 @@
 
 Public station: https://gold-air.onrender.com/
 
-This edition collects news and observed gold quotes, ranks relevant fresh
-reports, and generates shared Arabic/English speech entirely in cloud services.
-It never initializes the previous PC-backed discussion importer, even if its
-old environment flag remains set. No home computer, local LLM, Windows account
-or Cloudflare station is needed for this radio.
+News collection, relevance ranking and Arabic/English speech run in the cloud,
+without a home PC, local inference server, private history or account database.
+19 fixed public sources include Arabic/English Euronews and individually dated
+Al Jazeera liveblog updates alongside BBC, CNBC, Guardian, CNN Business Arabic,
+France 24, DW, Sky News Arabic and Federal Reserve releases/speeches.
 
-Fixed public sources include BBC, Al Jazeera, France 24, DW, Sky News Arabic,
-CNN Business Arabic, CNBC Top News/Energy, Guardian World/Business and Federal
-Reserve releases/speeches. Individual Al Jazeera liveblog updates are collected
-through bounded fixed public publisher operations with cache and backoff rules.
+Latest-ten-minute reports have priority. When none is waiting, relevant unplayed
+reports from ages 601-3600 seconds are announced with their original publication
+time and clearly labelled EARLIER REPORT. Both cohorts use rounded top-70%
+selection before playback receipts. Already-spoken reports are not recycled to
+fill airtime. Original source clocks are retained. Short source teasers can
+supplement short titles within a combined 24-word excerpt budget.
 
-A transparent bilingual gold/macro topic filter selects ceil(70% of relevant
-unique fresh reports) per language. It never pads the quota with unrelated
-stories. Original publication and receipt clocks stay separate; only reports
-within ten minutes can be newly scheduled. Counts and named relevance topics
-are available in manifests. This is editorial selection, not a prediction or
-verification of publisher claims. Arabic and English use their publisher feeds;
-coverage is not all world news.
+Speech is prepared ahead in bounded queues. Original 120-second relaxing
+instrumental music loops throughout waiting, download and retry gaps; ready
+speech replaces it on the same element. Pause stops both. The old eight-second
+music cap no longer applies. No downloaded songs or copyrighted recordings are
+included in the original synthesized bed.
 
-Arabic Nabra FP32 with offline vowel restoration runs on Render CPU; English
-speech is requested by Render from Microsoft's existing online voice provider.
-The same shared station clock is used by listeners. Source-attributed speech
-and real Gold API observations take priority; music breaks are at most eight
-seconds. There is no public prompt, synthesis, arbitrary-fetch or upload route.
-Models/assets are fixed and hash-checked at build time. The process is non-root.
+Arabic Nabra FP32 and offline vowel restoration run on Render CPU. English
+speech uses the existing online voice provider, requested by Render. This
+package hosts no LLM podcasts or predictive/account models. The full workspace
+at https://g.au7.workers.dev/app is a separate deployment.
 
-The free Render instance can sleep after 15 minutes idle and loses ephemeral
-queues on restarts. No keepalive bypass or 24/7 guarantee is provided. This
-package hosts no LLM podcasts, account database or prediction models. The full
-workspace is a separate deployment at https://g.au7.workers.dev/app.
+All collection destinations are fixed. There is no public synthesis, prompt,
+arbitrary-fetch, model-upload or private-data route. The Docker process is
+non-root, assets are hash-checked at build time, and runtime inference downloads
+are disabled. Read TTS_DEPLOYMENT.md for model pins and licenses.
 
-The source ZIP includes source/tests/licenses only, without credentials,
-private data, model weights or generated audio. Docker verifies its SHA256.
-Read TTS_DEPLOYMENT.md for model pins and notices.
+Free Render can sleep after 15 minutes idle, loses ephemeral receipts/queues on
+restart and has limited CPU. No keepalive workaround or 24/7 guarantee is added.
+The source ZIP contains source/tests/licenses without model weights, private
+data, credentials or generated audio. Docker checks its SHA256 before extracting.
