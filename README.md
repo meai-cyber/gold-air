@@ -12,9 +12,10 @@ owner's PC. This separate edition leaves the forecasting/account workspace alone
 - All eligible relevant reports can enter the queue. Gold, economy, oil, energy,
   central banks and inflation rank first, followed by major world developments.
   Sport, promotions and lifestyle fillers do not earn news airtime.
-- 25 fixed publisher sources, including liveblog updates, plus 9 pinned public
+- 29 fixed publisher sources, including liveblog updates, plus 9 pinned public
   Telegram/Bluesky publisher accounts. New feeds: Asharq Al-Awsat main/economy,
-  Le Monde world/world-economy, CNBC world/finance. Public direct replies to the
+  Le Monde world/world-economy, CNBC world/finance, BBC Science/Environment,
+  Guardian Economics/Science and NASA news releases. Public direct replies to the
   four pinned Bluesky publishers are optional unverified individual feedback,
   explicitly not a representative opinion sample.
 - Six fixed economic discovery searches add allowlisted publisher headlines
@@ -24,10 +25,13 @@ owner's PC. This separate edition leaves the forecasting/account workspace alone
 - Related unspoken collected reports form source-attributed roundups. All
   underlying report IDs are consumed once. No article body or consensus is
   invented. Original publication/first-seen clocks are retained.
-- Target 80% speech/20% music. At least 60% of spoken airtime is reserved for
-  collected reports, public posts and factual report roundups. Recorded
-  educational podcasts need earned news allowance and never count as news.
-  Actual elapsed news/podcast/music metrics and shortfalls remain visible.
+- Target 80% speech/20% music. New reports have priority and the news-share
+  target applies when reports are available. During quiet periods, labelled
+  recorded gold discussions continue instead of waiting for news credit.
+  Podcasts never count as news. Actual news/podcast/music shares stay visible.
+  New reports arriving during preparation get the next unscheduled slot.
+  The 12-episode/48-turn archive rotates in order, with labelled replays after
+  a 10-minute cooldown; the entire library is used before repeats are considered.
 - Arabic news: fast Zariyah network speech, with Nabra FP32/offline vowels loaded
   only on an actual fallback. English news: Jenny network
   voice. Distinct podcast cast: Maia uses Arabic Layla/English Aria; Omar uses
