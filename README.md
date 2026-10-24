@@ -28,10 +28,12 @@ owner's PC. This separate edition leaves the forecasting/account workspace alone
   collected reports, public posts and factual report roundups. Recorded
   educational podcasts need earned news allowance and never count as news.
   Actual elapsed news/podcast/music metrics and shortfalls remain visible.
-- Arabic news: Nabra FP32 CPU with offline vowels. English news: Jenny network
+- Arabic news: fast Zariyah network speech, with Nabra FP32/offline vowels loaded
+  only on an actual fallback. English news: Jenny network
   voice. Distinct podcast cast: Maia uses Arabic Layla/English Aria; Omar uses
   genuine male Arabic Rami/English Guy at requested+60% speed(1.6x). Cast failure
   retries; a man is never silently replaced with the female news voice.
+  Script speaker labels are not read aloud; presenter names stay on screen.
 - Five verified CC0 MP3s in the cloud: three HoliznaCC0 instrumentals plus vocal
   songs Missing Person(Stefan Kartenberg feat.Orrisroot) and Scintillating Love
   (Stefan Kartenberg feat.Asiansaints). Music pauses for speech and resumes the
