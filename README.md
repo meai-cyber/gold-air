@@ -51,16 +51,11 @@ speech replaces it on the same element. Pause stops both. The old eight-second
 music cap no longer applies. No downloaded songs or copyrighted recordings are
 included in the original synthesized bed.
 
-Arabic Nabra FP32 and offline vowel restoration run on Render CPU. English
-uses pinned Phonon 40M q8 CPU speech with ptts 0.4.1 for complete short items
-(at most 120 characters AND 22 words). Longer reports go directly to the
-previous online voice, preserving all text and keeping Phonon enabled for
-later short items. Native time/memory failures also use that voice fallback.
-Measured native generation on the free CPU is slower than real time.
-Phonon is CC BY-NC 4.0, requires owner-approved access and is attributed in the
-page. A temporary model-only BuildKit secret downloads fixed hashed assets;
-the Hugging Face account token is never stored on Render or in the image.
-An uncached build after the download grant expires needs a renewed grant.
+Arabic Nabra FP32 and offline vowel restoration run on Render CPU. Every
+complete English report goes directly to the previous en-US-JennyNeural
+network voice via edge-tts 7.3.1. RADIO_ENGLISH_TTS=edge disables native Phonon.
+The active image no longer installs ptts, downloads Phonon weights or requires
+its temporary build grant. The native trial source is preserved but inactive.
 Price commentary now requires a changed observed price at spoken-cent precision;
 the first quote silently seeds its reference. News continues independently. This
 package hosts no LLM podcasts or predictive/account models. The full workspace
