@@ -10,9 +10,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg ca-certi
     && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 COPY gold-radio-render-source.zip /tmp/gold-radio-source.zip
-RUN python -c "import hashlib,pathlib,zipfile; p=pathlib.Path('/tmp/gold-radio-source.zip'); assert hashlib.sha256(p.read_bytes()).hexdigest()=='fc66ecd96ae1ce2502d6e51f4ee4713577f3bc3e650e26599b25d38f63d10ebb'; zipfile.ZipFile(p).extractall('/app'); p.unlink()"
+RUN python -c "import hashlib,pathlib,zipfile; p=pathlib.Path('/tmp/gold-radio-source.zip'); assert hashlib.sha256(p.read_bytes()).hexdigest()=='da3234d26483f4e318aa8e0c31bb7b090f9ac31c88ffa379a8841832531f8b2e'; zipfile.ZipFile(p).extractall('/app'); p.unlink()"
 RUN pip install --no-cache-dir -r /app/requirements.txt
-RUN python bootstrap.py && useradd --uid 10001 --create-home radio \
+RUN python bootstrap.py && python licensed_music.py && useradd --uid 10001 --create-home radio \
     && mkdir -p /tmp/gold-radio-data && chown radio:radio /tmp/gold-radio-data \
     && chmod -R a-w /opt/gold-radio-assets
 USER radio

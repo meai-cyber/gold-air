@@ -33,8 +33,8 @@ Source bodies remain bounded at 800 characters and audio slots at 90 seconds.
 
 Factual gold briefings approximately every three minutes describe observed
 minute-level moves, sampled ranges and actual publisher topics. These are
-observational briefings rather than LLM-generated podcasts. Twelve-second music
-breaks follow complete news bursts or briefings, with more music in empty gaps.
+observational briefings rather than LLM-generated podcasts. A rolling airtime budget targets 80% speech and 20% music; recorded
+educational podcasts fill quiet news periods, with target and actual airtime shown separately.
 
 Three factual briefing formats rotate between observed movement, sampled range
 and curve reading. Compact price bulletins retain all available 1/5/10-minute
@@ -45,9 +45,10 @@ already be stale, while the original final freshness check remains enforced.
 The player shows a separately clocked Gold API reference strip, clears stale
 numbers and keeps full spoken text in an expandable panel below audio controls.
 
-Speech is prepared ahead in bounded queues. Original 120-second relaxing
-instrumental music loops throughout waiting, download and retry gaps; ready
-speech replaces it on the same element. Pause stops both. The old eight-second
+Speech is prepared ahead in bounded queues. Three creator-released CC0 relaxing MP3 tracks are stored in the
+cloud and shuffled without adjacent repeats. Their shared music-only clock
+pauses for speech and resumes the same song from the paused position. The
+original station WAV remains a fallback. Ready speech takes priority. Pause stops both. The old eight-second
 music cap no longer applies. No downloaded songs or copyrighted recordings are
 included in the original synthesized bed.
 
@@ -58,7 +59,7 @@ The active image no longer installs ptts, downloads Phonon weights or requires
 its temporary build grant. The native trial source is preserved but inactive.
 Price commentary now requires a changed observed price at spoken-cent precision;
 the first quote silently seeds its reference. News continues independently. This
-package hosts no LLM podcasts or predictive/account models. The full workspace
+package hosts recorded educational podcasts, with no live LLM or predictive/account models. The full workspace
 at https://g.au7.workers.dev/app is a separate deployment.
 
 All collection destinations are fixed. There is no public synthesis, prompt,
@@ -70,3 +71,9 @@ Free Render can sleep after 15 minutes idle, loses ephemeral receipts/queues on
 restart and has limited CPU. No keepalive workaround or 24/7 guarantee is added.
 The source ZIP contains source/tests/licenses without model weights, private
 data, credentials or generated audio. Docker checks its SHA256 before extracting.
+
+
+Current programme: 12 bilingual educational episodes, four complete turns each;
+recorded/replay labels and independent channel progress. A bounded disk cache
+reuses recorded speech. One English network producer can work alongside the
+Arabic CPU producer. Music and source/license pins are in licensed_music.py.
