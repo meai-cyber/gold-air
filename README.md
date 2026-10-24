@@ -52,7 +52,14 @@ music cap no longer applies. No downloaded songs or copyrighted recordings are
 included in the original synthesized bed.
 
 Arabic Nabra FP32 and offline vowel restoration run on Render CPU. English
-speech uses the existing online voice provider, requested by Render. This
+prefers pinned Phonon 40M q8 CPU speech using ptts 0.4.1 and its embedded default
+voice. Native time/memory failures use the existing online voice fallback.
+Phonon is CC BY-NC 4.0, requires owner-approved access and is attributed in the
+page. A temporary model-only BuildKit secret downloads fixed hashed assets;
+the Hugging Face account token is never stored on Render or in the image.
+An uncached build after the download grant expires needs a renewed grant.
+Price commentary now requires a changed observed price at spoken-cent precision;
+the first quote silently seeds its reference. News continues independently. This
 package hosts no LLM podcasts or predictive/account models. The full workspace
 at https://g.au7.workers.dev/app is a separate deployment.
 
