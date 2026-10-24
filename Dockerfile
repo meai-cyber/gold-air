@@ -10,11 +10,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg ca-certi
     && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 COPY gold-radio-render-source.zip /tmp/gold-radio-source.zip
-RUN python -c "import hashlib,pathlib,zipfile; p=pathlib.Path('/tmp/gold-radio-source.zip'); assert hashlib.sha256(p.read_bytes()).hexdigest()=='da3234d26483f4e318aa8e0c31bb7b090f9ac31c88ffa379a8841832531f8b2e'; zipfile.ZipFile(p).extractall('/app'); p.unlink()"
+RUN python -c "import hashlib,pathlib,zipfile; p=pathlib.Path('/tmp/gold-radio-source.zip'); assert hashlib.sha256(p.read_bytes()).hexdigest()=='d5a04624f0180b1bc94c3e1a3416effc32ea86762e37b61417732ef8ad9f9b02'; zipfile.ZipFile(p).extractall('/app'); p.unlink()"
 RUN pip install --no-cache-dir -r /app/requirements.txt
 RUN python bootstrap.py && python licensed_music.py && useradd --uid 10001 --create-home radio \
     && mkdir -p /tmp/gold-radio-data && chown radio:radio /tmp/gold-radio-data \
-    && chmod -R a-w /opt/gold-radio-assets
+    && chmod -R a+rX,a-w /opt/gold-radio-assets
 USER radio
 EXPOSE 10000
 # One server/producer, never multiple workers with conflicting broadcast clocks.
