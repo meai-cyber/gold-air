@@ -17,6 +17,10 @@ owner's PC. This separate edition leaves the forecasting/account workspace alone
   Le Monde world/world-economy, CNBC world/finance. Public direct replies to the
   four pinned Bluesky publishers are optional unverified individual feedback,
   explicitly not a representative opinion sample.
+- Six fixed economic discovery searches add allowlisted publisher headlines
+  through Google News RSS, preserving the supplied publication clocks. No
+  article body, paywall or opaque-link redirect is fetched. Evergreen quote
+  pages are excluded. Discovery coverage does not guarantee continuous supply.
 - Related unspoken collected reports form source-attributed roundups. All
   underlying report IDs are consumed once. No article body or consensus is
   invented. Original publication/first-seen clocks are retained.
