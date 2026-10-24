@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg ca-certi
     && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 COPY gold-radio-render-source.zip /tmp/gold-radio-source.zip
-RUN python -c "import hashlib,pathlib,zipfile; p=pathlib.Path('/tmp/gold-radio-source.zip'); assert hashlib.sha256(p.read_bytes()).hexdigest()=='30c7482b3a4d8712d1863090865a12e9475231a559cfd0df48aa3e06ef3ba499'; zipfile.ZipFile(p).extractall('/app'); p.unlink()"
+RUN python -c "import hashlib,pathlib,zipfile; p=pathlib.Path('/tmp/gold-radio-source.zip'); assert hashlib.sha256(p.read_bytes()).hexdigest()=='89fc82ae9e1b4ed02aae4a491d34fee67f729fe347808fe3e136e34765c8d455'; zipfile.ZipFile(p).extractall('/app'); p.unlink()"
 RUN pip install --no-cache-dir -r /app/requirements.txt
 RUN --mount=type=secret,id=phonon-build_json,dst=/run/secrets/phonon_build_json,required=true python phonon_assets.py
 RUN python bootstrap.py && useradd --uid 10001 --create-home radio \
