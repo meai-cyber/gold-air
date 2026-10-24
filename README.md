@@ -5,14 +5,14 @@ Public station: https://gold-air.onrender.com/
 News collection, ranking and Arabic/English speech run in the cloud without the
 owner's PC. This separate edition leaves the forecasting/account workspace alone.
 
-## Current programme,25 October2026
+## Current programme, 25 October 2026
 
-- Newest reports first; unspoken reports up to120minutes old announce their
+- Newest reports first; unspoken reports up to 120minutes old announce their
   original publication time. Older reports never become fake breaking news.
 - All eligible relevant reports can enter the queue. Gold, economy, oil, energy,
   central banks and inflation rank first, followed by major world developments.
   Sport, promotions and lifestyle fillers do not earn news airtime.
--25 fixed publisher sources, including liveblog updates, plus9 pinned public
+- 25 fixed publisher sources, including liveblog updates, plus 9 pinned public
   Telegram/Bluesky publisher accounts. New feeds: Asharq Al-Awsat main/economy,
   Le Monde world/world-economy, CNBC world/finance. Public direct replies to the
   four pinned Bluesky publishers are optional unverified individual feedback,
@@ -24,7 +24,7 @@ owner's PC. This separate edition leaves the forecasting/account workspace alone
 - Related unspoken collected reports form source-attributed roundups. All
   underlying report IDs are consumed once. No article body or consensus is
   invented. Original publication/first-seen clocks are retained.
-- Target80% speech/20% music. At least60% of spoken airtime is reserved for
+- Target 80% speech/20% music. At least 60% of spoken airtime is reserved for
   collected reports, public posts and factual report roundups. Recorded
   educational podcasts need earned news allowance and never count as news.
   Actual elapsed news/podcast/music metrics and shortfalls remain visible.
