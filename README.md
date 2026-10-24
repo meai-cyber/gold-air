@@ -52,8 +52,11 @@ music cap no longer applies. No downloaded songs or copyrighted recordings are
 included in the original synthesized bed.
 
 Arabic Nabra FP32 and offline vowel restoration run on Render CPU. English
-prefers pinned Phonon 40M q8 CPU speech using ptts 0.4.1 and its embedded default
-voice. Native time/memory failures use the existing online voice fallback.
+uses pinned Phonon 40M q8 CPU speech with ptts 0.4.1 for complete short items
+(at most 120 characters AND 22 words). Longer reports go directly to the
+previous online voice, preserving all text and keeping Phonon enabled for
+later short items. Native time/memory failures also use that voice fallback.
+Measured native generation on the free CPU is slower than real time.
 Phonon is CC BY-NC 4.0, requires owner-approved access and is attributed in the
 page. A temporary model-only BuildKit secret downloads fixed hashed assets;
 the Hugging Face account token is never stored on Render or in the image.
