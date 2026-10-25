@@ -4,13 +4,15 @@ Public station: https://gold-air.onrender.com/
 
 ## News supply repair, 25 October 2026
 
-Release `2026-10-25-news-supply-radio-10` scopes the existing six discovery
+Release `2026-10-25-news-supply-radio-11` scopes the existing six discovery
 queries to approved worldwide publishers, corrects bounded economy/news
 selection misses and excludes static quote/history pages. News-index clocks
 are labelled as unverified original publication times. Both channels retain
 the two-hour window and speak each selected report once; no regional Arab
 publisher or PC source is added. The cloud podcast writer still awaits the
-owner configuration below; neither archive nor weak native model substitutes
+owner configuration below. Unmoderated individual listener replies are disabled
+after live review found speculative allegations; the five pinned publisher
+social feeds remain active. Neither archive nor weak native model substitutes
 for it. Improved supply is not proof of continuous news or the 80/20 target.
 
 ## Optional stronger cloud writer, prepared 25 October 2026
@@ -64,8 +66,9 @@ owner's PC. This separate edition leaves the forecasting/account workspace alone
   all AlJazeera editions, their social accounts and the old liveblog collector
   are excluded by a central destination policy before network requests.
 - Five exact global Bluesky publisher identities: Reuters, Bloomberg, CNBC,
-  AssociatedPress and TheGuardian. Public replies to these pinned accounts are
-  attributed, unverified individual feedback, never a representative consensus.
+  AssociatedPress and TheGuardian. Individual replies are disabled after live
+  review found speculative allegations; publisher posts remain attributed and
+  are never treated as a representative public consensus.
   No Telegram feeds, external linked articles or publisher thumbnails are fetched.
 - Six fixed economic discovery searches add allowlisted publisher headlines
   through Google News RSS, preserving the supplied publication clocks. No
