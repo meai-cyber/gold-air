@@ -2,6 +2,22 @@
 
 Public station: https://gold-air.onrender.com/
 
+## NVIDIA Bolt writer, 25 October 2026
+
+Release `2026-10-25-bolt-radio-17` adds the explicitly selected hosted model
+`nvidia/nemotron-3.5-bolt-e4b`, thinking disabled and conversational mode enabled.
+Set `RADIO_CLOUD_PROVIDER=nvidia` with the owner's `NVIDIA_API_KEY` stored only
+in Render. The existing provider remains selected until that owner setup step.
+No Qwen/native/archive substitute is used when NVIDIA is selected. News and
+price speech continue if its key is missing. The fixed TLS adapter is bounded
+to one active request, one pending request, two-second spacing and provider
+rate-limit backoff. A local call counter does not invent a daily provider quota.
+NVIDIA's free endpoint is for development/testing; production entitlement is
+separate. Arabic is listed by the model owner, but real bilingual quality and
+latency require actual generation. 506 Python and 56 player checks passed
+with fake inference. No NVIDIA credential or model
+weights are in this repository.
+
 ## One-hour source clocks and public reactions, 25 October 2026
 
 Release `2026-10-25-fresh-hour-radio-16` admits only original publisher/author
