@@ -8,11 +8,13 @@ The existing Gold Pulse Workers account was visually verified as Workers Free,
 and its scoped account-owned Workers AI credential was saved directly in Render.
 No credential is included in this repository. Real requests completed in roughly
 one second, but initial script generation hit over-broad lexical checks. Release
-`2026-10-25-live-cloud-radio-13` keeps each host question and analyst answer
+`2026-10-25-live-cloud-radio-14` keeps each host question and analyst answer
 together, while allowing a changed-price bulletin between complete turns.
 Source-led prompts replace arbitrary topic facets for collected reports; name
 checks use the same bounded public text actually sent to the provider. Earlier
-whole-word guard repairs and failure backoff remain. Real Arabic and English
+whole-word guard repairs and failure backoff remain. Prompt wording now matches
+the strict direction checks for every variable and requires gold in each question.
+Real Arabic and English
 pairs have generated and played; broader quality and airtime still require
 measured live checks. Configuration and mock tests alone are not quality evidence.
 
