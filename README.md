@@ -2,6 +2,18 @@
 
 Public station: https://gold-air.onrender.com/
 
+## Named public-comment segment, 25 October 2026
+
+Release `2026-10-25-people-now-radio-19` adds What people are saying now: roughly
+120 seconds of complete, named public quotes every600 seconds when supply exists.
+Posts stay within30 minutes through full audio end, reply parents within one
+hour, and names/handles/original UTC times remain attributed and unverified.
+No invented posts, clone voices, translation filler or public-consensus claim.
+Versioned consumer/business opinions under pinned Bloomberg/CNBC roots augment
+the existing financial-opinion gate. Source hosts remain unchanged. The player
+shows actual scheduled time and empty supply; ordinary radio continues when
+comments are unavailable. 549 Python and58 player tests passed before deployment.
+
 ## Bolt quiet-period recovery, 25 October 2026
 
 Release `2026-10-25-bolt-recovery-radio-18`, writer v12, repairs the real
