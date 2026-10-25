@@ -2,6 +2,18 @@
 
 Public station: https://gold-air.onrender.com/
 
+## One-hour source clocks and public reactions, 25 October 2026
+
+Release `2026-10-25-fresh-hour-radio-16` admits only original publisher/author
+clocks within one hour, checks them through the scheduled clip end, and excludes
+unverified Google discovery items from speech. Publisher polling is 15 seconds;
+new reports can move ahead of older queued items without splitting a discussion.
+Strictly screened individual financial opinions are checked from pinned public
+threads and four fixed Mastodon timelines, always labelled unverified and never
+used as factual model context. No eligible reaction existed in the initial sample;
+the station does not invent opinions to fill that gap. 479 Python and 56 player
+checks passed. News and all radio runtime work remain independent of the PC.
+
 ## Live cloud writer activation, 25 October 2026
 
 The existing Gold Pulse Workers account was visually verified as Workers Free,
