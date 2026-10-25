@@ -2,6 +2,17 @@
 
 Public station: https://gold-air.onrender.com/
 
+## Competition retry flow, 25 October 2026
+
+Release `2026-10-25-competition-flow-radio-21` keeps the current fictional quiz
+intact during a brief failed-voice retry. Ordinary news cannot slip between its
+question and answers during that retry; if the failure lasts 60 seconds beyond
+the last queued quiz audio, abandon the episode without an award and resume news.
+Changed-price calls retain complete-turn priority. The v20 live trial captured all
+34 bilingual quiz WAVs and correct imaginary-prize finishes; its transient
+English interruption prompted this repair. An existing NVIDIA detached-socket
+deadline cleanup race also has a focused fix. 582 Python and 59 player tests pass.
+
 ## Fictional Competition, 25 October 2026
 
 Release `2026-10-25-competition-radio-20` adds a clearly scripted entertainment
