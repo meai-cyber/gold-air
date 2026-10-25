@@ -23,9 +23,10 @@ RADIO_CF_FREE_PLAN_CONFIRMED=1
 
 Use only an account-scoped Workers AI Read/Edit token. Do not paste it into
 chat, this file, the source ZIP or browser code. Do not upgrade or purchase a
-plan. The default remains the native experiment until the provider is selected;
-a configured Cloudflare failure never silently substitutes that native model
-or a prerecorded programme. Collection and TTS continue on Render with no PC
+plan. The default now waits for the Cloudflare account configuration. The weak
+native experiment is no longer selected automatically; a Cloudflare failure
+never silently substitutes it or a prerecorded programme. Collection and TTS
+continue on Render with no PC
 dependency. Public visitors still cannot submit prompts.
 
 The adapter enforces a conservative local reservation estimate of 5,000
