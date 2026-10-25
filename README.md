@@ -8,10 +8,13 @@ The existing Gold Pulse Workers account was visually verified as Workers Free,
 and its scoped account-owned Workers AI credential was saved directly in Render.
 No credential is included in this repository. Real requests completed in roughly
 one second, but initial script generation hit over-broad lexical checks. Release
-`2026-10-25-live-cloud-radio-12` corrects Arabic whole-word matching and observed
-English sentence-openers, clarifies neutral commentary and backs off validation
-failures. Genuine complete bilingual discussions still require the live checks;
-configuration and mock tests alone are not quality evidence.
+`2026-10-25-live-cloud-radio-13` keeps each host question and analyst answer
+together, while allowing a changed-price bulletin between complete turns.
+Source-led prompts replace arbitrary topic facets for collected reports; name
+checks use the same bounded public text actually sent to the provider. Earlier
+whole-word guard repairs and failure backoff remain. Real Arabic and English
+pairs have generated and played; broader quality and airtime still require
+measured live checks. Configuration and mock tests alone are not quality evidence.
 
 ## News supply repair, 25 October 2026
 
@@ -20,13 +23,15 @@ queries to approved worldwide publishers, corrects bounded economy/news
 selection misses and excludes static quote/history pages. News-index clocks
 are labelled as unverified original publication times. Both channels retain
 the two-hour window and speak each selected report once; no regional Arab
-publisher or PC source is added. The cloud podcast writer still awaits the
-owner configuration below. Unmoderated individual listener replies are disabled
+publisher or PC source is added. The cloud podcast writer is now connected.
+Unmoderated individual listener replies are disabled
 after live review found speculative allegations; the five pinned publisher
 social feeds remain active. Neither archive nor weak native model substitutes
 for it. Improved supply is not proof of continuous news or the 80/20 target.
 
-## Optional stronger cloud writer, prepared 25 October 2026
+## Initial stronger cloud writer preparation, 25 October 2026
+
+The live activation section above supersedes the setup state recorded below.
 
 The native 350M trial produced short audio, but live tests also found awkward
 Arabic concepts and mismatched answers. It is an experimental writer and has
