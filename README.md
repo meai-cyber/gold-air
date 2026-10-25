@@ -46,7 +46,19 @@ owner's PC. This separate edition leaves the forecasting/account workspace alone
 
 The player joins a shared language-channel clock, shows full collected text,
 original source times and actual cast names, and retains the separate rich
-TradingView/OANDA chart. Price speech requires a genuine observed price change.
+TradingView/OANDA chart. Gold API quotes are polled every 10seconds. Genuine
+cent-level changes trigger a coalesced, short whole-dollar price call with
+up/down direction at the next complete speaking boundary (15second cooldown).
+A periodic price check targets at least one call every 10minutes, including
+flat prices. Curve reports target four minutes, prepared early to allow speech
+latency. They describe observed moves and tentative support/resistance, with an
+explicitly experimental CPU trend projection when actual source samples support
+it. Flat/sparse data is reported honestly. The 1/3/5minute targets preserve their
+original clocks; a bounded forward ledger compares later quotes with no change.
+This fixed statistical recipe is not a trained ML model and has no demonstrated
+predictive edge. Stale quotes are not spoken as current; external feed/voice
+outages can delay these cadence targets. Priority slots preserve complete
+news/podcast audio and recheck delayed source freshness.
 
 No cloud LLM is hosted in this free image. Podcasts are recorded educational
 scripts; report roundups contain collected source material. Network voices use
