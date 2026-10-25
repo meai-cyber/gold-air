@@ -2,6 +2,21 @@
 
 Public station: https://gold-air.onrender.com/
 
+## Bolt quiet-period recovery, 25 October 2026
+
+Release `2026-10-25-bolt-recovery-radio-18`, writer v12, repairs the real
+quiet-period prompt/guard mismatch: both English and Arabic analyst tasks now
+explicitly require gold in their first sentence, without inventing a fresh
+report. Source-led tasks avoid reporting assertions and host tasks require a
+complete question. All content, freshness, paired-turn and repetition guards
+remain. Rejected scripts retry after the normal 20-second interval instead of
+the provider-outage exponential delay; provider failures still back off up to
+five minutes independently. The public UI distinguishes content rejection from
+provider unavailability. This does not hide a failed script or restore archive,
+Qwen, native or PC fallbacks. NVIDIA remains selected by the saved Render setting.
+All 510 Python and 57 player tests passed before deployment; live model compliance
+and completed audio require separate observation.
+
 ## NVIDIA Bolt writer, 25 October 2026
 
 Release `2026-10-25-bolt-radio-17` adds the explicitly selected hosted model

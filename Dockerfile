@@ -41,7 +41,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg ca-certi
     && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 COPY gold-radio-render-source.zip /tmp/gold-radio-source.zip
-RUN python -c "import hashlib,pathlib,zipfile; p=pathlib.Path('/tmp/gold-radio-source.zip'); assert hashlib.sha256(p.read_bytes()).hexdigest()=='1b7824991db6e9375ee10206b17a3e1f87256175949f7530c6a188066befa286'; zipfile.ZipFile(p).extractall('/app'); p.unlink()"
+RUN python -c "import hashlib,pathlib,zipfile; p=pathlib.Path('/tmp/gold-radio-source.zip'); assert hashlib.sha256(p.read_bytes()).hexdigest()=='c3d6cc95744912419ae3a4e4a4eb8156961fd2c170e66675512a082706c2e5b0'; zipfile.ZipFile(p).extractall('/app'); p.unlink()"
 RUN pip install --no-cache-dir -r /app/requirements.txt
 RUN python bootstrap.py && python licensed_music.py \
     && python cloud_llm_assets.py --root /opt/gold-radio-assets \
