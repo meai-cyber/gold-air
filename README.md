@@ -2,6 +2,40 @@
 
 Public station: https://gold-air.onrender.com/
 
+## Optional stronger cloud writer, prepared 25 October 2026
+
+The native 350M trial produced short audio, but live tests also found awkward
+Arabic concepts and mismatched answers. It is an experimental writer and has
+not achieved the 80% speech target. This release adds an owner-configured
+Cloudflare Workers AI adapter for the fixed multilingual model
+`@cf/qwen/qwen3-30b-a3b-fp8`. Its real quality and latency remain untested until
+the owner supplies credentials. No API token is part of this source.
+
+After verifying the intended account's **Workers Free** subscription, its owner
+can select the adapter in the existing Render service's Environment settings:
+
+```text
+RADIO_CLOUD_PROVIDER=cloudflare
+CF_ACCOUNT_ID=<the owner-selected Gold Pulse account ID>
+CF_API_TOKEN=<secret entered directly in Render>
+RADIO_CF_FREE_PLAN_CONFIRMED=1
+```
+
+Use only an account-scoped Workers AI Read/Edit token. Do not paste it into
+chat, this file, the source ZIP or browser code. Do not upgrade or purchase a
+plan. The default remains the native experiment until the provider is selected;
+a configured Cloudflare failure never silently substitutes that native model
+or a prerecorded programme. Collection and TTS continue on Render with no PC
+dependency. Public visitors still cannot submit prompts.
+
+The adapter enforces a conservative local reservation estimate of 5,000
+neurons per UTC day; failed attempts count. This ephemeral ledger is not the
+provider's actual global usage or a spending cap. The account must actually be
+on Workers Free, whose 10,000-neuron daily allowance stops further requests
+when exhausted. Other account usage shares that allowance. Check current
+[Cloudflare pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/)
+and [token setup](https://developers.cloudflare.com/workers-ai/get-started/rest-api/).
+
 News collection, ranking and Arabic/English speech run in the cloud without the
 owner's PC. This separate edition leaves the forecasting/account workspace alone.
 
