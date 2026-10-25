@@ -29,12 +29,11 @@ owner's PC. This separate edition leaves the forecasting/account workspace alone
   underlying report IDs are consumed once. No article body or consensus is
   invented. Original publication/first-seen clocks are retained.
 - Target 80% speech/20% music. New reports have priority and the news-share
-  target applies when reports are available. During quiet periods, labelled
-  recorded gold discussions continue instead of waiting for news credit.
+  target applies when reports are available. During quiet periods, freshly generated
+  cloud discussions can continue instead of waiting for news credit.
   Podcasts never count as news. Actual news/podcast/music shares stay visible.
   New reports arriving during preparation get the next unscheduled slot.
-  The 12-episode/48-turn archive rotates in order, with labelled replays after
-  a 10-minute cooldown; the entire library is used before repeats are considered.
+  The recorded archive is disabled when the cloud writer is enabled.
 - Arabic news: fast Zariyah network speech, with Nabra FP32/offline vowels loaded
   only on an actual fallback. English news: Jenny network
   voice. Distinct podcast cast: Maia uses Arabic Layla/English Aria; Omar uses
@@ -63,10 +62,31 @@ predictive edge. Stale quotes are not spoken as current; external feed/voice
 outages can delay these cadence targets. Priority slots preserve complete
 news/podcast audio and recheck delayed source freshness.
 
-No cloud LLM is hosted in this free image. Podcasts are recorded educational
-scripts; report roundups contain collected source material. Network voices use
-an external speech service. Render Free can sleep when idle; ephemeral receipts
-and caches reset on restarts. News shortages are reported without fabrication.
+The cloud writer uses LiquidAI/LFM2.5-350M-GGUF, exact
+LFM2.5-350M-QAD-Q4_0.gguf (219312832 bytes), pinned revision
+657e078c94084481950a2d555a941481f715536b. Its checksum and embedded native
+chat template are verified at build/startup. The official llama.cpp b11869
+source is compiled inside Debian for CPU-only inference with one thread,
+context1536, one slot, no GPU layers or weight repacking. Its authenticated
+API binds only to127.0.0.1:18083 inside Render; public visitors cannot submit
+prompts or select models. The app exposes only port10000.
+
+Fresh short source-grounded or explicitly educational questions/commentary
+are produced in the background. Candidate access never blocks the broadcast
+lock. Source clocks, complete collected facts and measured price/outlook values
+remain independently checked; model text cannot invent numeric predictions or
+turn a public opinion into verified news. The small model is not an autonomous
+investigative or advanced reasoning system. Failed/incomplete/unsafe outputs
+are discarded and status is shown honestly. In cloud-writer mode the static
+recorded-script archive is disabled. Prepared audio remains shared by everyone
+on the selected language clock, with distinct Maia/Omar voices.
+
+Network voices use the existing external speech service. Before a native
+Arabic fallback allocates its weights, the owned LLM process is released; it can
+resume after the fallback cools down. Render Free has512MiB/0.1CPU and can sleep
+when idle. Memory headroom and generation deadlines are bounded; generation
+speed and news supply can affect the80/20programme target. Ephemeral state resets
+on restart. The owner PC is never an inference or collection dependency.
 
 The verified source ZIP excludes models, private history, databases and secrets.
 The runtime is non-root and exposes no public prompt,upload,synthesis or model API.
