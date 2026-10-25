@@ -2,6 +2,17 @@
 
 Public station: https://gold-air.onrender.com/
 
+## Live cloud writer activation, 25 October 2026
+
+The existing Gold Pulse Workers account was visually verified as Workers Free,
+and its scoped account-owned Workers AI credential was saved directly in Render.
+No credential is included in this repository. Real requests completed in roughly
+one second, but initial script generation hit over-broad lexical checks. Release
+`2026-10-25-live-cloud-radio-12` corrects Arabic whole-word matching and observed
+English sentence-openers, clarifies neutral commentary and backs off validation
+failures. Genuine complete bilingual discussions still require the live checks;
+configuration and mock tests alone are not quality evidence.
+
 ## News supply repair, 25 October 2026
 
 Release `2026-10-25-news-supply-radio-11` scopes the existing six discovery
