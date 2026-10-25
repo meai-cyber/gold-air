@@ -2,6 +2,18 @@
 
 Public station: https://gold-air.onrender.com/
 
+## Fictional Competition, 25 October 2026
+
+Release `2026-10-25-competition-radio-20` adds a clearly scripted entertainment
+show: Nadia hosts Sam and Mia, five questions and two answers per round lead to
+a computed winner and “Bravo!” with an imaginary one-ounce gold trophy. No real
+prize or participant is claimed. Seventeen complete voice turns use three new,
+distinct gender-correct voices per language, verified in the live Edge catalogue.
+RADIO_COMPETITION=1 is enabled in Docker. Ordinary news does not split questions
+from answers; genuine price changes can take complete-turn boundaries. Existing
+news, social, NVIDIA writer and music behavior remain. 577 Python and59 player
+tests passed; real quiz audio is verified separately after deployment.
+
 ## Named public-comment segment, 25 October 2026
 
 Release `2026-10-25-people-now-radio-19` adds What people are saying now: roughly
