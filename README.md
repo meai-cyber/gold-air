@@ -2,6 +2,25 @@
 
 Public station: https://gold-air.onrender.com/
 
+## Quiz variety and real public-comment supply, 25 October 2026
+
+Release `2026-10-25-variety-social-radio-22` rotates 50 reviewed bilingual
+questions across ten disjoint episodes, varies choice positions and computed
+scores/winners, and offsets startup decks by UTC time. The quiz remains clearly
+fictional with an imaginary trophy and the existing distinct synthetic cast.
+Nine fixed Mastodon tags now supply attributed public business/technology
+opinions, including federated accounts received only through mastodon.social.
+Remote author links are data, never fetched. Complete prose, frozen content
+and original clocks remain bound; pre-receipt edits cannot renew original age.
+Posts and parents stay within one hour through complete audio end. An existing
+hosted-writer background task supplies explicitly unverified, labelled Arabic
+machine translations, retaining English originals. No alternate provider or
+fabricated filler is used. The two-minute/every-ten target depends on supply.
+Real pre-release audit: nine of nine sources ready, two eligible current posts.
+625 Python tests and 60 player tests pass with fake provider/audio fixtures.
+Actual deployed bilingual audio is checked separately; fixture success does
+not prove current social supply or translation quality.
+
 ## Competition retry flow, 25 October 2026
 
 Release `2026-10-25-competition-flow-radio-21` keeps the current fictional quiz
