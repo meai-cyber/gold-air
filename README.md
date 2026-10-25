@@ -2,6 +2,17 @@
 
 Public station: https://gold-air.onrender.com/
 
+## News supply repair, 25 October 2026
+
+Release `2026-10-25-news-supply-radio-10` scopes the existing six discovery
+queries to approved worldwide publishers, corrects bounded economy/news
+selection misses and excludes static quote/history pages. News-index clocks
+are labelled as unverified original publication times. Both channels retain
+the two-hour window and speak each selected report once; no regional Arab
+publisher or PC source is added. The cloud podcast writer still awaits the
+owner configuration below; neither archive nor weak native model substitutes
+for it. Improved supply is not proof of continuous news or the 80/20 target.
+
 ## Optional stronger cloud writer, prepared 25 October 2026
 
 The native 350M trial produced short audio, but live tests also found awkward
