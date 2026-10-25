@@ -12,12 +12,15 @@ owner's PC. This separate edition leaves the forecasting/account workspace alone
 - All eligible relevant reports can enter the queue. Gold, economy, oil, energy,
   central banks and inflation rank first, followed by major world developments.
   Sport, promotions and lifestyle fillers do not earn news airtime.
-- 29 fixed publisher sources, including liveblog updates, plus 9 pinned public
-  Telegram/Bluesky publisher accounts. New feeds: Asharq Al-Awsat main/economy,
-  Le Monde world/world-economy, CNBC world/finance, BBC Science/Environment,
-  Guardian Economics/Science and NASA news releases. Public direct replies to the
-  four pinned Bluesky publishers are optional unverified individual feedback,
-  explicitly not a representative opinion sample.
+- 22 fixed feeds from worldwide operators, including BBC, DW, France24,
+  Euronews, CNBC, Guardian, LeMonde, NASA and the FederalReserve. Arabic news
+  uses the international broadcasters' Arabic editions. Arab regional outlets,
+  all AlJazeera editions, their social accounts and the old liveblog collector
+  are excluded by a central destination policy before network requests.
+- Five exact global Bluesky publisher identities: Reuters, Bloomberg, CNBC,
+  AssociatedPress and TheGuardian. Public replies to these pinned accounts are
+  attributed, unverified individual feedback, never a representative consensus.
+  No Telegram feeds, external linked articles or publisher thumbnails are fetched.
 - Six fixed economic discovery searches add allowlisted publisher headlines
   through Google News RSS, preserving the supplied publication clocks. No
   article body, paywall or opaque-link redirect is fetched. Evergreen quote
@@ -67,3 +70,14 @@ and caches reset on restarts. News shortages are reported without fabrication.
 
 The verified source ZIP excludes models, private history, databases and secrets.
 The runtime is non-root and exposes no public prompt,upload,synthesis or model API.
+
+
+Worldwide source policy (25October2026): Google discovery also rejects regional
+publishers before their rows are admitted; cached old reports are filtered on
+load and ingestion. Requests use a generic PublicNewsReader useragent without
+site domain/name, referrer, origin, credentials or cookies. External article
+links are not fetched by the station. The player sends no referrer when a listener
+chooses to open a source link. These changes control future destinations; they
+cannot remove historical publisher logs or conceal Render's shared outbound IP
+from providers that remain allowed. Source policy and current collector counts
+are exposed in the public manifest for verification.
