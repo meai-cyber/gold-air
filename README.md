@@ -4,7 +4,7 @@ Public station: https://gold-air.onrender.com/
 
 ## Concise, dense public opinions, 26 October 2026
 
-Release `2026-10-26-dense-social-radio-25` reads just account and complete
+Release `2026-10-26-dense-social-radio-26` reads just account and complete
 comment, following the owner's explicit request. Spoken clocks, full context
 titles and repeated caveats are removed; originals, source dates and machine
 translation labels stay on screen and in metadata. The Arabic channel uses
@@ -14,8 +14,9 @@ diversity, safe complete anchor prose and focused opinion cues expand supply.
 Scrapling's cold static import no longer consumes its first HTTP deadline.
 Technical-name translation false rejects are repaired within the existing
 NVIDIA adapter token cap. Original clocks, source guards and no-filler behavior
-remain. 673 Python and 61 player tests pass, including an eight-author
-two-minute scheduling contract and short exact Arabic/English speech. Actual
+remain. 676 Python and 61 player tests pass, including an eight-author
+two-minute scheduling contract and short exact Arabic/English speech. Analysis retries are bounded per language across changing quote IDs. Priority
+insertion retains its separate 90-second bound. Actual
 live voices are verified separately from these fake provider/audio fixtures.
 
 ## Scrapling public social comments, 26 October 2026
