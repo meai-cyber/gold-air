@@ -4,7 +4,7 @@ Public station: https://gold-air.onrender.com/
 
 ## Organized news and public opinions, 26 October 2026
 
-Release `2026-10-26-topic-people-radio-28` follows the owner's latest format:
+Release `2026-10-26-topic-people-radio-29` follows the owner's latest format:
 a 150-second speech target about every 900 seconds. Topics receive one brief
 introduction, followed by related distinct accounts' complete comments. News
 replies stay with their exact fetched headline; unrelated thematic views are
@@ -15,7 +15,7 @@ disclaimers stay removed. Complete opinions retain 35-second bounds, with a
 20-second allowance for the first topic introduction. HN collection prioritizes
 current commented news rather than old software showcases. Per-language
 analysis retry backoff and independent priority-insertion limits are retained.
-693 Python tests and 62 player tests pass. Targets are distinct from actual
+694 Python tests and 62 player tests pass. Targets are distinct from actual
 published full-audio durations.
 
 ## Concise, dense public opinions, 26 October 2026
