@@ -2,6 +2,22 @@
 
 Public station: https://gold-air.onrender.com/
 
+## Concise, dense public opinions, 26 October 2026
+
+Release `2026-10-26-dense-social-radio-24` reads just account and complete
+comment, following the owner's explicit request. Spoken clocks, full context
+titles and repeated caveats are removed; originals, source dates and machine
+translation labels stay on screen and in metadata. The Arabic channel uses
+Arabic originals or checked translations. Whole short comments are prioritized
+with a 35-second complete-audio cap. Eight bounded discussion checks, topic
+diversity, safe complete anchor prose and focused opinion cues expand supply.
+Scrapling's cold static import no longer consumes its first HTTP deadline.
+Technical-name translation false rejects are repaired within the existing
+NVIDIA adapter token cap. Original clocks, source guards and no-filler behavior
+remain. 669 Python and 61 player tests pass, including an eight-author
+two-minute scheduling contract and short exact Arabic/English speech. Actual
+live voices are verified separately from these fake provider/audio fixtures.
+
 ## Scrapling public social comments, 26 October 2026
 
 Release `2026-10-26-scrapling-social-radio-23` adds static Scrapling collection
