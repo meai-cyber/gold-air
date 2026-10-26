@@ -2,6 +2,23 @@
 
 Public station: https://gold-air.onrender.com/
 
+## Scrapling public social comments, 26 October 2026
+
+Release `2026-10-26-scrapling-social-radio-23` adds static Scrapling collection
+of attributed complete public Hacker News comments alongside existing feeds.
+Only fixed HN index and numeric discussion routes are requested; no browser,
+login, external author/article requests or PC service is used. Comments remain
+within one hour through audio end. Separately typed discussion context may be
+up to 24 hours old and is explicitly dated in speech; it is never new news.
+Arabic machine translation remains labelled and source-bound. Prepared quotes
+remain visible briefly without being replayed as filler. NVIDIA selection,
+fictional quiz, fixed voices and existing news/mix behavior remain in place.
+656 Python and 61 player tests pass. Actual static collection completed six
+allowed HN requests in 3.531 seconds and admitted two current named comments;
+both passed the full speech planner and complete-end freshness checks. A
+live-shaped navigation regression protects visible prose from hidden-UI false
+rejections. Completed deployed audio is verified separately.
+
 ## Quiz variety and real public-comment supply, 25 October 2026
 
 Release `2026-10-25-variety-social-radio-22` rotates 50 reviewed bilingual
