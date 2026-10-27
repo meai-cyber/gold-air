@@ -2,6 +2,28 @@
 
 Public station: https://gold-air.onrender.com/
 
+## Prepared bandwidth repair, 27 October 2026
+
+Release `2026-10-27-bandwidth-radio-31` delivers checked 48 kbps mono MP3 speech,
+96 kbps stereo song copies, compact/gzipped metadata, no stopped-player audio
+prefetch, and bounded idle/error polling. Complete PCM remains private evidence;
+source clocks, NVIDIA writer, distinct voices and actual airtime accounting stay.
+Both Docker recipes omit the unused native LLM compiler and weights.
+
+Offline measurements on archived real audio: 87.44% fewer speech bytes, 61.66%
+fewer song/bed bytes and 81.03% smaller manifests. Seven bilingual recordings
+kept complete decoded frame coverage; real browser MP3 playback was verified.
+These are Windows transport results, not live Render or forecast-quality proof.
+710 radio Python and 68 player tests pass; the wider workspace passes 1,279 Node
+and 184 model-service checks, with five optional skips across those two suites.
+
+**Hosting remains suspended:** Render reports 17.5 GB against the Hobby workspace's
+5 GB allowance. The owner remains free-only; no card or upgrade was enabled.
+Source updates do not reset the quota. The next monthly reset is 1 November 2026.
+Compressed audio still cannot guarantee continuous 24/7 listening inside 5 GB.
+Live v31 activation, complete source-linked speech and actual airtime must be
+verified after restoration. Existing v30 opinion supply limits remain explicit.
+
 ## Organized news and public opinions, 26 October 2026
 
 Release `2026-10-26-topic-people-radio-30` follows the owner's latest format:
