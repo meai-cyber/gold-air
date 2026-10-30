@@ -2,6 +2,32 @@
 
 Public station: https://gold-air.onrender.com/
 
+## Prepared automatic cleanup, 31 October 2026
+
+Validation: 721 radio Python tests passed, one OS-dependent symbolic-link case
+was skipped, and all 68 player tests passed.
+
+Release `2026-10-31-cleanup-radio-32` adds an independent startup/every-minute
+runtime cleanup worker. Expired generated WAV/MP3 pairs and unindexed cache
+orphans get a three-minute grace. Playing, future and recent speech remain.
+Educational audio cache entries expire after 24 hours of disuse and retain
+the existing 32 MiB/128-item bound. Original source clocks are preserved;
+expired public-source/display metadata is trimmed under its existing rules.
+
+Only direct-child regular producer/cache hash-named audio is deleted. No
+recursive deletion, symlink following, music/model removal, credential access
+or provider-usage-counter reset is introduced. Health and manifests expose
+actual cleanup clocks, removed file/byte counts and retryable error status.
+The scheduler runs inside the cloud service and pauses when Render stops;
+no PC cron, new paid job, public deletion endpoint or keepalive was added.
+
+The public service still returns HTTP 503. Its last authenticated state showed
+bandwidth suspension; the dashboard now requires sign-in. No old remote files
+were inspected/deleted and this release is not claimed live. File deletion
+cannot refund the 17.5 GB of monthly transfer already used. A local independent
+worker proof removed eight deliberately created stale fixture files (1,835,008
+bytes), preserving active/future audio and a synthetic provider ledger.
+
 ## Prepared bandwidth repair, 27 October 2026
 
 Release `2026-10-27-bandwidth-radio-31` delivers checked 48 kbps mono MP3 speech,
